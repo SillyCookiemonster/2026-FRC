@@ -195,9 +195,9 @@ def profit_goal(total_costs):
     while not valid:
 
         # ask for a profit goal...
-        response = input("What is your profit goal (eg $500 or %50): ")
+        response = input("What is your profit goal (e.g. $500 or %50): ")
 
-        # check if first characher is $...
+        # check if first character is $...
         if response[0] == "$":
             profit_type = "$"
             # Get amount (everything after the $)
@@ -345,7 +345,7 @@ sales_target_string = f"\nTotal Sales Needed: ${sales_target:.2f}"
 
 minimum_price_string = f"Minimum selling Price: ${selling_price:.2f}"
 suggested_price_string = make_statement(f"Suggested Selling Price: "
-                                        f"{suggested_price:.2f}", "*")
+                                        f"${suggested_price:.2f}", "*")
 
 # List of strings to be outputted / written to file
 to_write = [main_heading_string, quantity_string,
